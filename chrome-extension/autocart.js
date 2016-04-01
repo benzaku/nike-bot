@@ -2,8 +2,9 @@ var preferedSizes = ["EU 41", "EU 40.5", "EU 42", "EU 42.5", "EU 43", "EU 44", "
 var amount = 1;
 
 function addToCart() {
+	console.log("addToCart heart beat.");
+
 	var sizesList=document.getElementsByName("skuAndSize")[0];
-	//console.log(sizesList);
 	function setQuantity() {
 		document.getElementsByName("qty")[0].selectedIndex = amount-1;
 	}
