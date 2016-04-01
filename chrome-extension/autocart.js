@@ -9,11 +9,17 @@ function addToCart() {
 		document.getElementsByName("qty")[0].selectedIndex = amount-1;
 	}
 	function setSizeValue() {
+		console.log("SizeListLength=" + sizesList.length);
+loop:
 		for (var i=0; i<sizesList.length; i++){
+			console.log("SizeList: " + sizesList.options[i].text);
 			for(var j = 0; j < preferedSizes.length; ++j) {
+				console.log("PreferedSize: " + preferedSizes[j]);
 				if (sizesList.options[i].text == preferedSizes[j]) {
+						console.log("Match: " + sizesList.options[i].text);
 						document.getElementsByName("skuAndSize")[0].selectedIndex = i;
 						setQuantity();
+						break loop;
 				}
 			}
 		}
