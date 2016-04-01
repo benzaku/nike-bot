@@ -1,4 +1,3 @@
-var size = "EU 41";
 var preferedSizes = ["EU 41", "EU 40.5", "EU 42", "EU 42.5", "EU 43", "EU 44", "EU 44.5", "EU 44.5", "EU 45"];
 var amount = 1;
 
